@@ -247,8 +247,8 @@ def main():
     #         score = evaluate_policy(env, agent, turns=1)
     #         print('EnvName:', BrifEnvName[opt.EnvIdex], 'score:', score)
     # else:
-    agent.load(EnvName, opt.ModelIdex)
-    total_steps = 1.5e5
+    # agent.load(EnvName, opt.ModelIdex)
+    total_steps = 0
     while total_steps < opt.Max_train_steps:
         s = env.reset_environment_request()  # Do not use opt.seed directly, or it can overfit to opt.seed
         time.sleep(1.0)
