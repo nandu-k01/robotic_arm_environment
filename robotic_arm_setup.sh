@@ -32,12 +32,12 @@ rosdep install --from-paths src --ignore-src -r -y
 source /opt/ros/$ROS_DISTRO/setup.sh
 colcon build --symlink-install --executor sequential
 
-# Download and build Gazebo ROS2 Control
-echo "Downloading and building Gazebo ROS2 Control..."
-cd ~/ros2_ws/src
-git clone -b humble https://github.com/ros-simulation/gazebo_ros2_control.git
-cd ..
-colcon build --symlink-install
+# # Download and build Gazebo ROS2 Control
+# echo "Downloading and building Gazebo ROS2 Control..."
+# cd ~/ros2_ws/src
+# git clone -b humble https://github.com/ros-simulation/gazebo_ros2_control.git
+# cd ..
+# colcon build --symlink-install
 
 # Clone and build the Robotic Arm Repository
 echo "Cloning and building the Robotic Arm Repository..."
