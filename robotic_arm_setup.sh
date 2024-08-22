@@ -30,7 +30,7 @@ rosdep update --rosdistro=$ROS_DISTRO
 sudo apt-get update
 rosdep install --from-paths src --ignore-src -r -y
 source /opt/ros/$ROS_DISTRO/setup.sh
-colcon build --symlink-install
+colcon build --symlink-install --executor sequential
 
 # Download and build Gazebo ROS2 Control
 echo "Downloading and building Gazebo ROS2 Control..."
