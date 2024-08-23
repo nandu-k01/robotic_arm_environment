@@ -218,7 +218,7 @@ def main():
     # env = 
     # eval_env = 
     print(f'Env:{EnvName}  state_dim:{opt.state_dim}  action_dim:{opt.action_dim}  '
-          f'max_a:{opt.max_action}  min_a:{-opt.max_action} ')
+          f'max_a:{opt.max_action}  min_a:{-opt.max_action} device:{opt.dvc}')
 
     # Seed Everything
     env_seed = opt.seed
