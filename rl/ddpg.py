@@ -203,8 +203,8 @@ opt.Max_train_steps = 5e6
 opt.ModelIdex = 150
 opt.save_interval = 1e4
 opt.write = True
-opt.dvc = 'cpu'
-opt.Loadmodel = True
+opt.dvc = 'cuda' if torch.cuda.is_available() else 'cpu'
+opt.Loadmodel = False
 opt.eval_interval = 2e3
 # opt.min_action = -2.617
 
